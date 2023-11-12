@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Analysis Loading...</title>
+    <link rel="stylesheet" href="../public/css/styles.css" />
+  </head>
+  <body>
+    <div id="loadingContent" class="text-center">
+      <div class="loader"></div>
+      <p>Analyzing data for <%= name %>... Please wait.</p>
+    </div>
+    <script>
+      setTimeout(() => {
+        window.location.href = `/results?name=<%= encodeURIComponent(name) %>`;
+      }, 10000); // 5000 milliseconds = 5 seconds
+    </script>
+  </body>
+</html>

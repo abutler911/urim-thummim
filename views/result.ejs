@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Analysis Results</title>
+  </head>
+  <body>
+    <h1>Analysis Results for <%= data.name %></h1>
+
+    <h2>Random Numbers</h2>
+    <ul>
+      <% data.randomNumbers.forEach(function(number) { %>
+      <li><%= number %></li>
+      <% }); %>
+    </ul>
+
+    <h2>Random Words</h2>
+    <ul>
+      <% data.randomWords.forEach(function(word) { %>
+      <li><%= word %></li>
+      <% }); %>
+    </ul>
+
+    <h2>Random Dates</h2>
+    <ul>
+      <% data.randomDates.forEach(function(date) { %>
+      <li><%= date %></li>
+      <% }); %>
+    </ul>
+
+    <!-- Add more data as needed -->
+  </body>
+</html>
