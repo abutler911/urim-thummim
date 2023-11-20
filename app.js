@@ -5,6 +5,8 @@ const port = 3000;
 // Middleware to parse the body of the request
 app.use(express.urlencoded({ extended: true }));
 
+app.use(express.static("public"));
+
 app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {

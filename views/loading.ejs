@@ -2,12 +2,16 @@
 <html>
   <head>
     <title>Analysis Loading...</title>
-    <link rel="stylesheet" href="../public/css/styles.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
     <div id="loadingContent" class="text-center">
       <div class="loader"></div>
-      <p>Analyzing data for <%= name %>... Please wait.</p>
+      <p>
+        <span class="typing-effect"
+          >Analyzing data for <%= name %>... Please wait.</span
+        >
+      </p>
     </div>
     <script>
       setTimeout(() => {
